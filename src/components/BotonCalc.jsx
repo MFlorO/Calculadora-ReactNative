@@ -2,9 +2,9 @@ import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import PropTypes from 'prop-types';
 
 
-const BotonCalc = ({ text, color='#9B9B9B', textColor='white', ancho=false }) => {
+const BotonCalc = ({ text, color='#9B9B9B', textColor='white', ancho=false, onPress }) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => onPress(text)}>
     <View style={{ ...styles.boton, backgroundColor: color, width: ancho ? 180 : 80}}>
       <Text style={{...styles.botonTexto, color: textColor}}>{text}</Text>
     </View>
@@ -21,7 +21,8 @@ BotonCalc.prototypes ={
   text: PropTypes.string.isRequired, 
   color: PropTypes.string, 
   textColor: PropTypes.string,
-  ancho: PropTypes.string
+  ancho: PropTypes.string,
+  onPress: PropTypes.func,
 }
 
 
