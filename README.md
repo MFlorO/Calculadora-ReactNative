@@ -1,6 +1,6 @@
 # Hero-App
 
-
+<img src = "./public/calculadora.jpg" >
  
  
 ## Tecnologías utilizadas:

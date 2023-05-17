@@ -6,8 +6,8 @@ import CalculadoraScreen from './src/screens/CalculadoraScreen';
 export default function App() {
   return (
     <View style={styles.fondo}>
+      <StatusBar style="light" />
       <CalculadoraScreen />
-      <StatusBar style="auto" />
     </View>
   );
 }
