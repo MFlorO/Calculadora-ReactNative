@@ -1,6 +1,8 @@
+
+
 # Hero-App
 
-<img src = "./public/calculadora.jpg" >
+<img src = "./public/calculadora.jpg" alt="Texto alternativo" width="300" height="200">
  
  
 ## Tecnologías utilizadas:
